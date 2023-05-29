@@ -41,8 +41,8 @@
                         )
                             </td>
                             <td>
-                                <button class="btn btn-danger btn-sm text-white">Delete</button>
-                                <a class="btn btn-success btn-sm">Edit</a>
+                                <button asp-page-handler="Delete" asp-route-id="book.Id" onclick="return confirm('u sure?')" class="btn btn-danger btn-sm text-white">Delete</button>
+                                <a asp-page="Edit" asp-route-id="@book.Id" class="btn btn-success btn-sm">Edit</a>
                             </td>
                         </tr>
                             }
